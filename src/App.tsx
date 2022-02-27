@@ -4,6 +4,7 @@ import Auth from "./layouts/Auth/Auth";
 import LecturersPortal from "./layouts/LecturersPortal/LecturersPortal";
 import StudentsPortal from "./layouts/StudentsPortal/StudentsPortal";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import LeacturerDashboard from "./pages/LeacturerDashboard";
 import Reports from "./pages/Reports/Reports";
 
 interface Props {}
@@ -18,7 +19,7 @@ const App = (props: Props) => {
           <Route path="reports" element={<Reports />} />
         </Route>
         <Route path="/lecturer" element={<LecturersPortal />}>
-          <Route index element={<Dashboard />} />
+          <Route index element={<LeacturerDashboard />} />
           <Route path="reports" element={<Reports />} />
         </Route>
       </Routes>

@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Auth from "./layouts/Auth/Auth";
 import LecturersPortal from "./layouts/LecturersPortal/LecturersPortal";
 import StudentsPortal from "./layouts/StudentsPortal/StudentsPortal";
+import CreateReport from "./pages/CreateReport";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import LeacturerDashboard from "./pages/LeacturerDashboard";
 import Reports from "./pages/Reports/Reports";
@@ -17,6 +18,7 @@ const App = (props: Props) => {
         <Route path="/student" element={<StudentsPortal />}>
           <Route index element={<Dashboard />} />
           <Route path="reports" element={<Reports />} />
+          <Route path="create-report" element={<CreateReport />} />
         </Route>
         <Route path="/lecturer" element={<LecturersPortal />}>
           <Route index element={<LeacturerDashboard />} />

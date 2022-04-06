@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface Props {}
 
@@ -66,12 +67,12 @@ const Reports = (props: Props) => {
                       2019
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                      <a
-                        href="#"
+                      <Link
+                        to="/student"
                         className="text-indigo-600 hover:text-indigo-900"
                       >
                         view progress
-                      </a>
+                      </Link>
                     </td>
                   </tr>
 

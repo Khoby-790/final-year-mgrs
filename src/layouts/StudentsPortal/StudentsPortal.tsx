@@ -18,7 +18,7 @@ const routes: IRoute[] = [
   {
     label: "Create Report",
     url: "/student/create-report",
-  }
+  },
 ];
 
 const StudentsPortal = (props: Props) => {
@@ -40,7 +40,7 @@ const StudentsPortal = (props: Props) => {
                 <Link
                   to="create-report"
                   type="button"
-                  className="inline-flex items-center px-6 py-2 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="inline-flex items-center px-6 py-2 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-primary hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   {/* <!-- Heroicon name: solid/mail --> */}
                   <svg

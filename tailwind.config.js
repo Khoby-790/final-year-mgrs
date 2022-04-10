@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#01357a",
+        ugYellow: "#ffbf0f",
       },
     },
   },

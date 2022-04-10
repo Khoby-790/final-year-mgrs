@@ -33,9 +33,7 @@ import { Outlet } from "react-router-dom";
 import { classNames } from "../../utils";
 
 const navigation = [
-  { name: "Home", href: "#", icon: HomeIcon, current: true },
-  { name: "My Courses", href: "#", icon: ViewListIcon, current: false },
-  { name: "Reports", href: "#", icon: ClockIcon, current: false },
+  { name: "Reports", href: "#", icon: ClockIcon, current: true },
 ];
 
 const projects = [
@@ -181,11 +179,11 @@ const LecturersPortal = () => {
         </Transition.Root>
 
         {/* Static sidebar for desktop */}
-        <div className="hidden lg:flex lg:flex-col lg:w-64 lg:fixed lg:inset-y-0 lg:border-r lg:border-gray-200 lg:pt-5 lg:pb-4 lg:bg-blue-200">
+        <div className="hidden lg:flex lg:flex-col lg:w-64 lg:fixed lg:inset-y-0 lg:border-r lg:border-gray-200 lg:pt-5 lg:pb-4 bg-primary">
           <div className="flex items-center flex-shrink-0 px-6">
             <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/workflow-logo-purple-500-mark-gray-700-text.svg"
+              className="h-8 w-auto text-white"
+              src="/ug-logo.png"
               alt="Workflow"
             />
           </div>
@@ -204,10 +202,10 @@ const LecturersPortal = () => {
                       />
                       <span className="flex-1 flex flex-col min-w-0">
                         <span className="text-gray-900 text-sm font-medium truncate">
-                          Jessy Schwarz
+                          Mr. Soli
                         </span>
                         <span className="text-gray-500 text-sm truncate">
-                          @jessyschwarz
+                          msoli@ug.edu.gh
                         </span>
                       </span>
                     </span>
@@ -337,9 +335,9 @@ const LecturersPortal = () => {
                     href={item.href}
                     className={classNames(
                       item.current
-                        ? "bg-gray-200 text-gray-900"
-                        : "text-gray-700 hover:text-gray-900 hover:bg-gray-50",
-                      "group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                        ? "bg-ugYellow text-white"
+                        : "  hover:bg-ugYellow hover:text-white  bg-white text-ugYellow",
+                      "group flex items-center px-2 py-2 text-sm font-medium rounded-md my-4"
                     )}
                     aria-current={item.current ? "page" : undefined}
                   >

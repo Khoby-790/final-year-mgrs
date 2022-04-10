@@ -72,8 +72,8 @@ const LecturerDashboard = (props: Props) => {
             >
               <div
                 className={classNames(
-                  project.bgColorClass,
-                  "flex-shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md"
+                  // project.bgColorClass,
+                  "flex-shrink-0 flex items-center justify-center w-16  text-sm font-medium rounded-l-md bg-primary text-ugYellow"
                 )}
               >
                 {project.initials}

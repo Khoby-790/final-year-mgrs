@@ -15,11 +15,13 @@ const App = (props: Props) => {
     <div className="h-screen">
       <Routes>
         <Route path="/" element={<Auth />} />
+
         <Route path="/student" element={<StudentsPortal />}>
           <Route index element={<Dashboard />} />
           <Route path="reports" element={<Reports />} />
           <Route path="create-report" element={<CreateReport />} />
         </Route>
+
         <Route path="/lecturer" element={<LecturersPortal />}>
           <Route index element={<LeacturerDashboard />} />
           <Route path="reports" element={<Reports />} />

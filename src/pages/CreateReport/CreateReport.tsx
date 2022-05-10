@@ -28,6 +28,10 @@ const CreateReport = (props: Props) => {
           <label htmlFor="Course">Comment</label>
           <textarea name="comment" id="comment"></textarea>
         </div>
+        
+      </div>
+      <div className="text-center">
+      <button className="inline-flex items-center px-6 py-2 my-5 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-primary hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Submit</button>
       </div>
     </div>
   );

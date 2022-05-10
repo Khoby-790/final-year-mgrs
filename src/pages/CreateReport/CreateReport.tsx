@@ -7,10 +7,13 @@ const CreateReport = (props: Props) => {
     <div className="my-11">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <div className="flex flex-col">
-          <label htmlFor="Course">Course</label>
+          <label htmlFor="Course">Course Code</label>
           <input type="text" />
         </div>
-
+        <div className="flex flex-col">
+          <label htmlFor="Course">Course Title</label>
+          <input type="text" />
+        </div>
         <div className="flex flex-col">
           <label htmlFor="Course">Year</label>
           <input type="text" />
@@ -19,6 +22,11 @@ const CreateReport = (props: Props) => {
         <div className="flex flex-col">
           <label htmlFor="Course">Lecturer</label>
           <input type="text" />
+        </div>
+
+        <div className="flex flex-col">
+          <label htmlFor="Course">Comment</label>
+          <textarea name="comment" id="comment"></textarea>
         </div>
       </div>
     </div>
